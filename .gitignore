@@ -24,4 +24,7 @@ __pycache__/
 *.pyc
 
 # Local Claude Code loader convenience (symlinks into agents/)
-.claude/
+.claude/*
+# 클라우드 세션 SessionStart 훅은 추적한다
+!.claude/settings.json
+!.claude/hooks/
