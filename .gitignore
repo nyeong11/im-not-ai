@@ -23,5 +23,9 @@ _workspace_prev/
 __pycache__/
 *.pyc
 
-# Local Claude Code loader convenience (symlinks into agents/)
-.claude/
+# Local Claude Code state is ignored, but the project-level loader symlinks
+# (.claude/skills/*, .claude/agents) are committed so /humanize loads in
+# every session opened on this repo, including claude.ai/code cloud sessions.
+.claude/*
+!.claude/skills/
+!.claude/agents
